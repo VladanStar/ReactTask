@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({text}) => {
   return (
-    <div>Header</div>
+    <header>
+      <div className="container">
+        <h2>FeedBack UI</h2>
+        {text}
+      </div>
+      </header>
   )
 }
 
