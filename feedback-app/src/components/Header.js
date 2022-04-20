@@ -1,14 +1,18 @@
-import React from 'react'
+import React from "react";
 
-const Header = ({text}) => {
+const Header = ({ text, bgColor, textColor }) => {
+  const headerStyles = {
+    backgroundColor: bgColor,
+    color: textColor,
+  };
   return (
-    <header>
+    <header style={headerStyles}>
       <div className="container">
         <h2>FeedBack UI</h2>
         {text}
       </div>
-      </header>
-  )
-}
+    </header>
+  );
+};
 
 export default Header;

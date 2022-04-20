@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header  text="Vladan Cupric"/>
+      <Header bgColor="red" textColor='blue' text="Vladan Cupric"/>
    
     </div>
   );
