@@ -8,7 +8,12 @@ function FeedbackList({feedback}) {
     }
     // console.log(feedback)
   return (
-    <div>FeedbackList</div>
+    <div className='feedback-list'>
+        {feedback.map((item)=>(
+           <FeedbackItem  key={item.id} item ={item}/>
+
+        ))}
+    </div>
   )
 }
 
