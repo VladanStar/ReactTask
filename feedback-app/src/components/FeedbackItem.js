@@ -4,8 +4,8 @@ import Card from './shared/Card';
 
 const FeedbackItem = ({item}) => {
 
- const handleClick =()=>{
-
+ const handleClick =(id)=>{
+  console.log(id);
  }
 
     return (
