@@ -24,7 +24,7 @@ function App() {
     <>
       <Header bgColor="red" textColor="blue" text="Vladan Cupric" />
       <div className="container">
-        <FeedbackForm  handleadd ={addFeedback} />
+        <FeedbackForm  handleAdd ={addFeedback} />
         <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>
