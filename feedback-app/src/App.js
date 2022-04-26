@@ -8,6 +8,10 @@ import "./App.css";
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
+ 
+  const addFeedback = (newFeedback) =>{
+    console.log(newFeedback)
+  }
 
   const deleteFeedback = (id) => {
     if (window.confirm("Are you sure you want to delete?")) {
@@ -18,7 +22,7 @@ function App() {
     <>
       <Header bgColor="red" textColor="blue" text="Vladan Cupric" />
       <div className="container">
-        <FeedbackForm />
+        <FeedbackForm  handleadd ={addFeedback} />
         <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>
