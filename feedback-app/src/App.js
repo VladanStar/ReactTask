@@ -3,6 +3,7 @@ import FeedbackData from "../src/data/FeedbackData";
 import { useState } from "react";
 import FeedbackList from "./components/FeedbackList";
 import FeedbackStats from "./components/FeedbackStats";
+import FeedbackForm from "./components/FeedbackForm";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <>
       <Header bgColor="red" textColor="blue" text="Vladan Cupric" />
       <div className="container">
+        <FeedbackForm />
         <FeedbackStats feedback={feedback} />
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
       </div>
