@@ -37,9 +37,8 @@ function App() {
         }>
          
         </Route>
-        <Route path="/about" element={AboutPage}>
-          This is about Route
-        </Route>
+        <Route path="/about" element={<AboutPage />}/>
+         
         </Routes>
         <AboutIconLink />
       </div>
